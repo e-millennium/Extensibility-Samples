@@ -1,0 +1,19 @@
+<dbdic.objects.objects>
+  <ROW NAME="RSM_PEDIDO_VENDA" CREATE_BLANK="FALSE" ORDER="0">
+    <FIELDS NAME="PEDIDOV" DATATYPE="3">
+      <FLAGS> AQ==
+</FLAGS>
+    </FIELDS>
+    <FIELDS NAME="NUMERO_CUPOM" DATATYPE="1" SIZE="50">
+      <FLAGS> AQ==
+</FLAGS>
+    </FIELDS>
+    <FIELDS NAME="CAMPANHA" DATATYPE="3">
+      <FLAGS> AQ==
+</FLAGS>
+    </FIELDS>
+    <INDEXES>
+      <FIELDS>PEDIDOV</FIELDS>
+    </INDEXES>
+  </ROW>
+</dbdic.objects.objects>

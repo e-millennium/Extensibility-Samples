@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<root>
+	<_currentid>RSM_002</_currentid>
+	<_name>RULES.RSM</_name>
+
+	<link category="CRM\SAC\Marketing\Redes Sociais" target="standard.tdataedit" _id="RSM_001" Caption="Redes Sociais">
+		<OBJECT>MILLENIUM!REDE_SOCIAL_MKT.REDES_SOCIAIS</OBJECT>
+	</link>
+	
+	<link category="CRM\SAC\Marketing\Campanhas Redes Sociais" target="standard.tdataedit" _id="RSM_002" Caption="Campanhas Redes Sociais">
+		<OBJECT>MILLENIUM!REDE_SOCIAL_MKT.CAMPANHAS</OBJECT>
+	</link>
+	
+</root>

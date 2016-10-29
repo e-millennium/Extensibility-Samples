@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <dimension  caption="Redes Sociais">
+      <tables>
+         <table name="rsm_redes_sociais"/>
+      </tables>
+      <attributes>
+         <level name="rede_social" caption="Rede Social" keyattribute="rede_social" displayattribute="descricao">
+            <attribute name="rede_social" cangroup="1" degenerate="1"/>
+            <attribute name="descricao" caption="Descricao" cangroup="1" degenerate="1"/>
+         </level>
+      </attributes>
+   </dimension>
+</root>

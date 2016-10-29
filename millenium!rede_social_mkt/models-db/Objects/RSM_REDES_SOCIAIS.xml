@@ -1,0 +1,17 @@
+<dbdic.objects.objects>
+  <ROW NAME="RSM_REDES_SOCIAIS" CREATE_BLANK="FALSE" DESCRIPTION="Redes Sociais" ORDER="0">
+    <FIELDS NAME="REDE_SOCIAL" DATATYPE="3">
+      <FLAGS> AQ==
+</FLAGS>
+    </FIELDS>
+    <FIELDS NAME="DESCRICAO" DATATYPE="1" SIZE="50">
+      <FLAGS> AQ==
+</FLAGS>
+    </FIELDS>
+    <INDEXES>
+      <FIELDS>REDE_SOCIAL</FIELDS>
+      <FLAGS> AQ==
+</FLAGS>
+    </INDEXES>
+  </ROW>
+</dbdic.objects.objects>

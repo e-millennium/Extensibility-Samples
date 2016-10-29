@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<root>
+  <OBJECT NAME="REDES_SOCIAIS">
+    <METHOD NAME="Exclui" DESCRIPTION="Exclui Rede Social" VERSION="10" INTFTYPE="3" THREADSAFE="0">
+      <PARAMS>
+        <GROUPS>
+          <GROUP/>
+        </GROUPS>
+        <PARAM NAME="REDE_SOCIAL" FORMAT="+" SIZE="8" FLAGS="1024" PROJECTION="0" FIELDLABEL="Rede Social" CTAB="0"/>
+      </PARAMS>
+      <FIELDS>
+        <GROUPS>
+          <GROUP/>
+        </GROUPS>
+      </FIELDS>
+      <ACTIONSCRIPT>#CHECK("SELECT COUNT(*) AS N FROM RSM_CAMPANHAS WHERE REDE_SOCIAL=:REDE_SOCIAL",N>0,"N&#227;o &#233; poss&#237;vel excluir rede social. Ela est&#225; em uso na campanha");
+
+UPDATE RSM_REDES_SOCIAIS SET DESCRICAO=:DESCRICAO
+WHERE REDE_SOCIAL=:REDE_SOCIAL;
+</ACTIONSCRIPT>
+    </METHOD>
+  </OBJECT>
+</root>

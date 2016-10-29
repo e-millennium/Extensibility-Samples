@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<root>
+  <fact size="1000000" caption="Campanha Redes Sociais">
+    <tables>
+      <table name="rsm_campanhas"/>
+    </tables>
+
+    <outriggers>
+        <outrigger fullname="rsm_redes_sociais$rsm_redes_sociais">
+            <relation cardinality="1-1">
+                <condition left="rsm_redes_sociais.rede_social" right="rsm_redes_sociais$rsm_redes_sociais.rede_social"/>
+            </relation>
+        </outrigger>
+    </outriggers>
+
+    <attributes>
+      <level name="rsm_redes_sociais" tablename="rsm_campanhas" caption="Campanha Redes Sociais" keyattribute="campanha" displayattribute="descricao" codeattribute="numero_cupom">
+         <attribute name="campanha" cangroup="0"/>     
+	     <attribute name="rede_social"/>     
+	     <attribute name="descricao" degenerate="1"/>     
+         <attribute name="numero_cupom" caption="N&#250;mero do Cupom" degenerate="1"/>     
+         <attribute name="data_inicial" caption="Data Inicial" degenerate="1"/>     
+         <attribute name="data_final" caption="Data Final" degenerate="1"/>
+         <attribute name="percentual_desconto" caption="Percentual M&#250;ximo Desconto" degenerate="1"/>
+         <attribute name="valor_maximo_compra" caption="Valor M&#250;ximo de Compra" degenerate="1"/>		 		 		 
+	 </level>
+    </attributes>
+  </fact>
+</root>

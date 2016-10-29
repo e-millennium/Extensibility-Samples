@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <fact>
+      
+	  <tables>
+         <table name="RSM_PEDIDO_VENDA"/>
+      </tables>
+      
+	  <relations>
+         <relation cardinality="1-1">
+            <condition connector="" left="pedido_venda.pedidov" right="RSM_PEDIDO_VENDA.pedidov" />
+         </relation>
+      </relations>
+	  
+		<outriggers>
+			<outrigger fullname="rsm_campanhas$rsm_campanhas">
+				<relation cardinality="1-1">
+					<condition left="pedido_venda.RSM_CAMPANHA" right="rsm_campanhas$rsm_campanhas.CAMPANHA"/>
+				</relation>
+			</outrigger>
+		</outriggers>
+		  
+      <attributes>
+         <level name="pedido_venda">
+            <attribute name="RSM_CAMPANHA" fieldname="CAMPANHA" tablename="RSM_PEDIDO_VENDA"/>
+			<attribute name="RSM_NUMERO_CUPOM" caption="Numero Cupom Desconto" cangroup="0" degenerate="1" tablename="RSM_PEDIDO_VENDA"/>
+         </level>
+      </attributes>
+	  
+   </fact>
+   
+</root>

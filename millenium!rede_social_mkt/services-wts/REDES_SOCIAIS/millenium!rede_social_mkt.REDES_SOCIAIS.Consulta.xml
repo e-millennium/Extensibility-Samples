@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<root>
+  <OBJECT NAME="REDES_SOCIAIS">
+    <METHOD NAME="Consulta" DESCRIPTION="Consulta Rede Social" VERSION="10" INTFTYPE="6" THREADSAFE="0">
+      <PARAMS>
+        <GROUPS>
+          <GROUP/>
+        </GROUPS>
+        <PARAM NAME="REDE_SOCIAL" FORMAT="+" SIZE="8" FLAGS="1024" PROJECTION="0" FIELDLABEL="Rede Social" CTAB="0"/>
+      </PARAMS>
+      <FIELDS>
+        <GROUPS>
+          <GROUP/>
+        </GROUPS>
+        <FIELD NAME="REDE_SOCIAL" FORMAT="+" SIZE="8" FLAGS="1024" PROJECTION="0" FIELDLABEL="Rede Social" CTAB="0"/>
+        <FIELD NAME="DESCRICAO" SIZE="50" FLAGS="9" PROJECTION="0" ORDER="1" FIELDLABEL="Descri&#231;&#227;o" CTAB="0"/>
+      </FIELDS>
+      <ACTIONSCRIPT>SELECT * FROM RSM_REDES_SOCIAIS
+WHERE REDE_SOCIAL=:REDE_SOCIAL;
+</ACTIONSCRIPT>
+    </METHOD>
+  </OBJECT>
+</root>
